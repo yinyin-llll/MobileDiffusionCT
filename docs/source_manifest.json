@@ -1,0 +1,116 @@
+{
+  "exported_configuration": "all_standard + adaptive_pyramid + residual; recon2.6 only",
+  "reference_config": "standard_suite_20261104/DRR_APLAT_2V/residual.yml",
+  "original_files": [
+    {
+      "path": "lib/config/config.py",
+      "source_sha256": "aac74b0fcd76d00b21eaba99d6c468980b692cc9b3d27c5e6e9be2848f08e95b"
+    },
+    {
+      "path": "lib/dataset/alignDataSetDRRViews.py",
+      "source_sha256": "c2eee3ae0160b96b65904a0b34da9aaaea909b92917ee92217490b4ed780bb47"
+    },
+    {
+      "path": "lib/dataset/baseDataSet.py",
+      "source_sha256": "ed81cc51794467c3b6a06b25d976b2d3da1b63f1f89676ae25f63bffebf62617"
+    },
+    {
+      "path": "lib/dataset/collate_fn.py",
+      "source_sha256": "7b2128dbcb138fc7e1c76f74051980770209cfbb594363e90d42d5853ad92f48"
+    },
+    {
+      "path": "lib/dataset/data_augmentation.py",
+      "source_sha256": "06f1c06164488ab9335d75c7fcaa332c6d4d3947aae7005ae03f5867ff439de0"
+    },
+    {
+      "path": "lib/dataset/utils.py",
+      "source_sha256": "777b28be848b7668cf3a8c3a0a0a663b955c2b735174db5c91a0b303cf269184"
+    },
+    {
+      "path": "lib/model/base_model.py",
+      "source_sha256": "bda6b8346bdb991fc22b90287493a68c359510275c514a2d4cfc66efb4fb7e40"
+    },
+    {
+      "path": "lib/model/multiView_CTDiffusion.py",
+      "source_sha256": "37edd0d0bded8565d31cc8f8c66837c5297b8565b52dec46950ab11a492b2cf9"
+    },
+    {
+      "path": "lib/model/nets/doubleBlockLU.py",
+      "source_sha256": "d97213b636fa2db791253fbdb54b31bf5c86a5c2dd53ce1576e2e3f9be85503e"
+    },
+    {
+      "path": "lib/model/nets/generator/global_convolutions.py",
+      "source_sha256": "95c4dd2d56f76649e12067fff141fd97781d1a519d8ed31ed1d29b84a4929531"
+    },
+    {
+      "path": "lib/model/nets/generator/latent_diffusion_3d.py",
+      "source_sha256": "fcdcad2b6191d685a3e6162b3af193fdeaa7d3a18ff03862bb002f14793222f7"
+    },
+    {
+      "path": "lib/model/nets/generator/latent_unet_3d.py",
+      "source_sha256": "c679685e30f06cbad4121af4e9c37251a282a8e0662a89312334dffa9ed0a984"
+    },
+    {
+      "path": "lib/model/nets/generator/residual_feature_lifting.py",
+      "source_sha256": "5b6da8872f76c892e1289e3a7cf8fb9bf26adc27b3efdcb4c4260fefe6f732bf"
+    },
+    {
+      "path": "lib/model/nets/generator/shape_texture_refiner.py",
+      "source_sha256": "b3adb10a17392fb986d7c890a8c2f269aff71ad08a45d626ac61873b70412bb0"
+    },
+    {
+      "path": "lib/model/nets/utils.py",
+      "source_sha256": "cfc879ced62599ab6353c58f47b5671ec7664c8f637f45ba2f529c3f3136cd83"
+    },
+    {
+      "path": "lib/utils/comparison_metrics.py",
+      "source_sha256": "9daac918f83151faeb6967fd35d6b6095ee8d30ce198bd8cb5256cd6796bba74"
+    },
+    {
+      "path": "lib/utils/metric_summary.py",
+      "source_sha256": "a1f58641376cbea78bc32c1fa9908f9214c850c245725fbb6af6d10e8c095973"
+    },
+    {
+      "path": "lib/utils/metrics.py",
+      "source_sha256": "139a5e171bfad06c719636dae01d71f5c1ddcce74828450965e59bd230e3f496"
+    },
+    {
+      "path": "lib/utils/metrics_np.py",
+      "source_sha256": "0457676de942ee3a3764869c7df79856c6d6bb3834a438189805660b93dd18a8"
+    },
+    {
+      "path": "lib/utils/performance.py",
+      "source_sha256": "63df479ab0590bf48cd8ed09462eb9ec45d5edd427efd6a38ff74ed22175970f"
+    },
+    {
+      "path": "lib/utils/projection.py",
+      "source_sha256": "605ddfb1701d379c334116bd330b72be9129435c84d78b224f43e5b4aac167fd"
+    },
+    {
+      "path": "lib/utils/revision_protocol.py",
+      "source_sha256": "3fa00e8e21b855cf04f1d1448ff38422632805a8f501a941d2bd756c0acc02ab"
+    },
+    {
+      "path": "lib/utils/transform_3d.py",
+      "source_sha256": "3ef30de4b69e595f80d34942efda89692e39cb4dd8752dc1839f56803ba6db6d"
+    },
+    {
+      "path": "lib/utils/visualizer.py",
+      "source_sha256": "c9913af6b6ba657fb3e0d67095c8e35194ae5bb0e8452aa8e831858defe29dca"
+    },
+    {
+      "path": "test.py",
+      "source_sha256": "7517d6d2f191be3c0c9ad3c187c5e947da6bc523a3413e7aec2550a62174d689"
+    },
+    {
+      "path": "train.py",
+      "source_sha256": "0bf679d04966e35a48964bf777572aa33a549e84f01902d66de75e3c8e137945"
+    }
+  ],
+  "adapted_files": [
+    "lib/model/factory.py",
+    "lib/dataset/factory.py",
+    "train.py CLI defaults",
+    "test.py CLI defaults"
+  ]
+}

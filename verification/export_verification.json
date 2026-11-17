@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "configuration": "all_standard + adaptive_pyramid + original residual denoiser; recon2.6 only",
+  "parameters": 17536467,
+  "strict_reference_checkpoint_keys": 170,
+  "python": "3.10.20",
+  "checks": [
+    "core-source SHA256 equality",
+    "all spatial convolution groups=1",
+    "exact architecture and parameter count",
+    "strict original checkpoint compatibility",
+    "synthetic CPU train/validate/save/load/sample/metrics/FLOPs",
+    "credential-pattern scan",
+    "no data/weights/symlinks"
+  ],
+  "data_included": false,
+  "weights_included": false
+}

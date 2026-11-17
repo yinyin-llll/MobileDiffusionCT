@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "parameters": 17536467,
+  "condition_encoder": "ResidualPyramidConditionEncoder",
+  "lifting": "adaptive_pyramid",
+  "denoiser": "LatentDenoiser3D",
+  "spatial_convolutions": 35,
+  "grouped_convolutions": [],
+  "architecture": {
+    "separable_cond": false,
+    "separable_denoiser": false,
+    "cond_replacements": 0,
+    "denoiser_replacements": 0,
+    "condition_lifting": "adaptive_pyramid",
+    "convolution_scope": "all_standard",
+    "whole_model_conversion": {
+      "spatial_convolutions_replaced": 0,
+      "transposed_convolutions_replaced": 0,
+      "native_depthwise_filters_expanded": 2
+    }
+  },
+  "checkpoint_compatibility": {
+    "status": "passed",
+    "matched_keys": 170,
+    "strict": true
+  }
+}

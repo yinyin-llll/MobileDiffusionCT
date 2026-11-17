@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "synthetic_data_only": true,
+  "resolution": [
+    32,
+    32,
+    32
+  ],
+  "test_cases": 1,
+  "training_epochs": 1,
+  "parameters": 17536467,
+  "checks": [
+    "HDF5 loading",
+    "forward/backward and optimizer",
+    "validation",
+    "TensorBoard logging",
+    "checkpoint save/load",
+    "sampling",
+    "all15metrics",
+    "FLOPs profiling",
+    "volume export"
+  ],
+  "note": "Reduced32^3/two-step smoke only; reference128^3/300-step configs are unchanged."
+}

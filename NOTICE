@@ -1,0 +1,11 @@
+MobileDiffusionCT standard-convolution export
+
+This export retains the existing framework copyright and GPLv3 notices.
+Framework files carrying those notices identify Tencent and Kai Ma
+(makai0324@gmail.com). See each source header and LICENSE.
+
+The original latent-diffusion, adaptive feature-lifting and convolution-policy
+implementation is copied from the current project without architecture changes.
+Factories and command-line defaults are narrowed to this exported model.
+No patient images, CT volumes, model weights, or comparison implementations
+are included. Split lists contain case-folder identifiers only.
